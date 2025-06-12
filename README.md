@@ -1,6 +1,6 @@
 # Proyecto: Aplicación Web para Promoción y Arriendo de Propiedades
 
-Este proyecto es una aplicación web desarrollada con **Next.js** (versión 13.5.6), **React** (versión 18), y **Tailwind CSS** para el diseño de estilos. Está orientado a la promoción y arriendo de propiedades, probablemente en la región de Puerto Varas, Chile, como se deduce del contenido y los datos incluidos.
+Este proyecto es una aplicación web desarrollada con **Next.js** (versión 13.5.6), **React** (versión 18), y **Tailwind CSS** para el diseño de estilos. Está orientado a la promoción y arriendo de propiedades, en la región de Puerto Varas, Chile.
 
 ## Características principales
 
