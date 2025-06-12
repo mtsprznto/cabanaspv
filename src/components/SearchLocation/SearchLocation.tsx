@@ -11,8 +11,8 @@ export function SearchLocation() {
     >
       <GrLocation></GrLocation>
       <div>
-        <p>Localizacion</p>
-        <p className="text-xs">Selecciona tu localizacion</p>
+        <p className="text-sm sm:text-sm md:text-base">Localizacion</p>
+        <p className="text-xs sm:text-sm">Selecciona tu localizacion</p>
       </div>
       {isOpen ? <GrFormUp></GrFormUp> : <GrFormDown></GrFormDown>}
 

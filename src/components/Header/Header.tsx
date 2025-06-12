@@ -29,7 +29,7 @@ export function Header() {
             <BsTelephone></BsTelephone>
             <span className="hidden md:block">+569 99999999</span>
           </Link>
-          <Link href={"/login"} className="px-3 py-2 text-white rounded-lg bg-secondary hover:bg-black">Login</Link>
+          {/* <Link href={"/login"} className="px-3 py-2 text-white rounded-lg bg-secondary hover:bg-black">Login</Link> */}
         </div>
       </div>
     </div>

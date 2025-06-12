@@ -18,14 +18,14 @@ const MarkerHouse = dynamic(
   { ssr: false }
 );
 
-
 export function Location() {
-  const coordinatePoint = { lat: 40.463667, lng: -3.74922 };
-
+  const coordinatePoint = { lat: -41.317289, lng: -72.991106 };
+  // -41.317477, -72.991059
+  // -41.317289, -72.991106
 
   const centerMarker = (position: { lat: number; lng: number }, fnMap: any) => {
     if (fnMap?.flyTo) {
-      fnMap.flyTo(position, 12);
+      fnMap.flyTo(position, 17);
     }
   };
 
@@ -39,12 +39,14 @@ export function Location() {
       </h2>
       <MapContainer
         center={coordinatePoint}
-        zoom={6}
+        zoom={15}
         scrollWheelZoom={false}
         className="h-[700px]"
       >
         <TileLayer url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}.png" />
-        <MarkerHouse selectMarker={centerMarker} />
+        <div className="w-30 h-30">
+          <MarkerHouse selectMarker={centerMarker} />
+        </div>
       </MapContainer>
     </Transition>
   );

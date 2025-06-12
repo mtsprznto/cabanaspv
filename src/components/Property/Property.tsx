@@ -12,12 +12,14 @@ import { Form } from "../Form";
 
 export function Property(props: PropertyProps) {
   const { house } = props;
+  
+  
   return (
     <main className="max-w-5xl mx-auto">
       <div className="grid md:grid-cols-[70%,1fr] my-3 py-5">
         <div className="px-6">
           <h1 className="text-3xl mb-4 text-secondary flex justify-between">
-            <span>House {house.id}</span>
+            <span>{house.title}</span>
             <span className="font-semibold">{formatPrice(house.price)}</span>
           </h1>
           <div className="flex gap-5 my-4">

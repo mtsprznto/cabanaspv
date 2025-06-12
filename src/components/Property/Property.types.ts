@@ -1,6 +1,7 @@
 export type PropertyProps = {
     house: {
         id: number;
+        title:string;
         price: number;
         location: string;
         star: number;

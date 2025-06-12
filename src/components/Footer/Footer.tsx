@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <div className="px-4 py-8 bg-black/90 md:py-40 md:px-36">
+    <div className="px-4 py-8 bg-black/90 md:py-40 lg:px-36">
       <div className="grid gap-8 grid-cols-2 md:grid-cols-[1fr,1fr,1fr,_400px] text-white">
         {dataFooter.map(({ id, links }) => (
           <div key={id}>
@@ -20,7 +20,7 @@ export function Footer() {
             ))}
           </div>
         ))}
-        <div className="md:text-right">
+        <div className="md:text-right md:px-5">
           <h4 className="mb-6 text-xl font-semibold">ArriendoPV</h4>
           <p className="">Calle Inventada, 5</p>
           <p className="">Puerto Varas, Chile</p>
