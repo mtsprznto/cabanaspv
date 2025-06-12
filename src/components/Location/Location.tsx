@@ -2,10 +2,7 @@
 
 import { Transition } from "../Transition";
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
-import { Map } from "leaflet";
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
 
 const MapContainer = dynamic(
   () => import("react-leaflet").then((mod) => mod.MapContainer),
