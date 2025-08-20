@@ -25,6 +25,7 @@ export function Properties() {
         {dataFilteredHouses.map(
           ({
             id,
+            title,
             location,
             price,
             bedrooms,
@@ -52,7 +53,7 @@ export function Properties() {
                     className="object-cover w-full max-h-full h-[200px] rounded-t-2xl"
                   ></Image>
                   <div className="px-3 py-5">
-                    <p className="text-secondary">{location}</p>
+                    <p className="text-secondary">{title}</p>
                     <p className="font-semibold">{formatPrice(price)}</p>
                     <div className="gap-4 mt-2 xl:flex">
                       <div className="flex items-center justify-center px-2 py-1 rounded-lg my-2 bg-slate-300/30">

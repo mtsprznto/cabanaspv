@@ -48,8 +48,8 @@ export function Form() {
   };
 
   return (
-    <div className="px-3">
-      <div className="py-4 px-3 rounded-lg shadow-light">
+    <div className="px-6 md:px-0 mt-3 md:mt-0">
+      <div className="md:py-4 md:px-3 rounded-lg shadow-light p-3">
         <div className="flex gap-4">
           <Image
             src={`/assets/properties/arriendo1.png`}

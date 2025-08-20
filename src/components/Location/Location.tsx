@@ -41,7 +41,7 @@ export function Location() {
         center={coordinatePoint}
         zoom={15}
         scrollWheelZoom={false}
-        className="h-[700px]"
+        className="h-[300px] md:h-[700px]"
       >
         <TileLayer url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}.png" />
         <div className="w-30 h-30">

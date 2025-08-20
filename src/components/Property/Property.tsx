@@ -14,10 +14,10 @@ import { ImageSlider } from "./ImageSlider";
 
 export function Property(props: PropertyProps) {
   const { house } = props;
-  
+
   return (
     <main className="max-w-5xl mx-auto">
-      <div className="grid md:grid-cols-[70%,1fr] my-3 py-5">
+      <div className="grid md:grid-cols-[70%,1fr] grid-cols-1 my-3 py-5">
         <div className="px-6">
           <h1 className="text-3xl mb-4 text-secondary flex justify-between">
             <span>{house.title}</span>
