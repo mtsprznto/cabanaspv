@@ -5,7 +5,7 @@ import "./globals.css";
 const quickSand = Quicksand({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CabañasPV - Puerto Varas",
+  title: "Dept - Puerto Varas",
   description: "Arriendo en puerto varas | Cabañas",
 };
 

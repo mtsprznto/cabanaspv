@@ -21,7 +21,7 @@ export function Footer() {
           </div>
         ))}
         <div className="md:text-right md:px-5">
-          <h4 className="mb-6 text-xl font-semibold">ArriendoPV</h4>
+          <h4 className="mb-6 text-xl font-semibold">Dept</h4>
           <p className="">Villa los presidentes</p>
           <p className="">Puerto Varas, Chile</p>
           <div className="flex gap-4 mt-5 md:justify-end">
