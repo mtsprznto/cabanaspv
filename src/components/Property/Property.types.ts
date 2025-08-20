@@ -1,14 +1,25 @@
+export type Reseña = {
+  id: number;
+  nombre: string;
+  fecha_publicacion: string;
+  puntuacion: number;
+  comentario: string;
+  url_img: string;
+};
+
 export type PropertyProps = {
-    house: {
-        id: number;
-        title:string;
-        price: number;
-        location: string;
-        star: number;
-        bedrooms: number;
-        bathroom: number;
-        meters: number;
-        description: string;
-        image: string;
-    }
-}
+  house: {
+    id: number;
+    title: string;
+    price: number;
+    location: string;
+    star: number;
+    bedrooms: number;
+    bathroom: number;
+    meters: number;
+    description: string;
+    image: string;
+    galleryImages: { id: number; urlImage: string }[];
+    reseñas: Reseña[];
+  };
+};

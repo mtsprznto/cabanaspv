@@ -12,7 +12,7 @@ const config: Config = {
         secondary: "#727C73",
       },
       backgroundImage: {
-        banner: "url('/assets/house-banner.png')",
+        banner: "url('/assets/PuertoVaras.webp')",
       },
       boxShadow: {
         light: "0px 4px 30px rgba(0, 0, 0, 0.08)",

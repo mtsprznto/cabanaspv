@@ -9,25 +9,24 @@ import Image from "next/image";
 export function Slider() {
   return (
     <Swiper
-      slidesPerView={2.5}
+      slidesPerView={2}
       spaceBetween={15}
       freeMode={true}
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       modules={[Navigation, Scrollbar]}
-      className="h-[240px] md:h-[320px] md:w-[500px]"
+      className="w-full max-w-full md:max-w-[1000px] mx-auto h-[240px] md:h-[290px]"
       grabCursor
     >
       {sliderDataImages.map(({ id, urlImage }) => (
-        <SwiperSlide key={id}>
+        <SwiperSlide key={id} className="relative md:w-[300px] w-full h-full">
           <Image
             src={`/assets/houses/${urlImage}`}
             alt="House"
-            width={200}
-            height={700}
-            className="w-auto h-auto rounded-xl"
-          ></Image>
+            fill
+            className="rounded-xl object-cover w-full"
+          />
         </SwiperSlide>
       ))}
     </Swiper>

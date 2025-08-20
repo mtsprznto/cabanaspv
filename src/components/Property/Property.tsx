@@ -9,10 +9,11 @@ import {
 import { TfiLocationPin } from "react-icons/tfi";
 import Image from "next/image";
 import { Form } from "../Form";
+import { ResenasComponents } from "../ReseñasComponents";
+import { ImageSlider } from "./ImageSlider";
 
 export function Property(props: PropertyProps) {
   const { house } = props;
-  
   
   return (
     <main className="max-w-5xl mx-auto">
@@ -32,14 +33,13 @@ export function Property(props: PropertyProps) {
               <span className="ml-1 font-semibold">{house.star}</span>
             </div>
           </div>
-          <Image
-            src={`/assets/properties/${house.image}`}
-            alt={`Casa en ${house.location}`}
-            width={1200}
-            height={1200}
-            className="w-full h-auto rounded-2xl"
-            priority
-          ></Image>
+          <div className="w-full flex flex-col gap-6">
+            <ImageSlider
+              images={house.galleryImages.map((img) => img.urlImage)}
+              altPrefix={`Casa en ${house.location}`}
+            />
+          </div>
+
           <div className="gap-4 lg:flex mt-4">
             <div className="flex items-center justify-center px-2 py-1 my-1 rounded-lg bg-slate-300">
               <LiaBedSolid></LiaBedSolid>
@@ -54,7 +54,15 @@ export function Property(props: PropertyProps) {
               <span className="ml-2">{house.meters}</span>
             </div>
           </div>
-          <div className="my-3">{house.description}</div>
+          {/* descripcion */}
+          <div className="rounded-lg shadow-light mt-3">
+            <div className="p-3 w-full">Descripción</div>
+            <div className="whitespace-pre-line border-t p-3">
+              {house.description}
+            </div>
+          </div>
+          {/* Reseñas */}
+          <ResenasComponents house={house} />
         </div>
         <Form></Form>
       </div>

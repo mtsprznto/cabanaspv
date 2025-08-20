@@ -22,7 +22,7 @@ export function Footer() {
         ))}
         <div className="md:text-right md:px-5">
           <h4 className="mb-6 text-xl font-semibold">ArriendoPV</h4>
-          <p className="">Calle Inventada, 5</p>
+          <p className="">Villa los presidentes</p>
           <p className="">Puerto Varas, Chile</p>
           <div className="flex gap-4 mt-5 md:justify-end">
             <LiaInstagram
